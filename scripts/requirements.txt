@@ -29,7 +29,6 @@ nbstripout==0.8.2
 nest-asyncio==1.6.0
 numpy==2.3.3
 packaging==25.0
-pandas==2.3.2
 parso==0.8.5
 pillow==11.3.0
 platformdirs==4.4.0
