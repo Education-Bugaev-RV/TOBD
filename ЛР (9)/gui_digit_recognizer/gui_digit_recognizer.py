@@ -3,8 +3,11 @@ from PIL import Image, ImageDraw
 import numpy as np
 from tensorflow import keras
 from tensorflow.keras import layers
+import os
 
-model = keras.models.load_model("custom.keras")
+# Путь к модели относительно расположения скрипта
+model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "mnist.keras")
+model = keras.models.load_model(model_path)
 root = tk.Tk()
 root.title("Распознавание цифры")
 
